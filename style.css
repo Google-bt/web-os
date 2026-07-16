@@ -9,7 +9,7 @@ body {
   margin: 0px;
 }
 
-#welcome-message {
+.window {
   border: 3px solid rgba(151, 151, 151, 0.3);
   border-radius: 20px;
   position: absolute;
@@ -20,7 +20,7 @@ body {
   height: fit-content;
 }
 
-#welcome-messageheader {
+.windowheader {
   cursor: move;
 }
 
@@ -39,4 +39,11 @@ body {
   border-radius: 50%;
   cursor: pointer;
   margin: 10px;
+}
+
+.windowcontent {
+  background-color: white;
+  margin: 4px;
+  padding: 12px;
+  border-radius: 12px;
 }
