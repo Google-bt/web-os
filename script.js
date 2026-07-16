@@ -48,3 +48,24 @@ function dragElement(elmnt) {
 }
 
 dragElement(document.getElementById("welcome-message"));
+
+function closeWindow(element) {
+  element.style.display = "none"
+}
+
+function openWindow(element) {
+  element.style.display = "block"
+}
+
+var welcomeMessage = document.querySelector("#welcome-message");
+
+var welcomeMessageClose = document.querySelector("#welcome-messageclose")
+var welcomeMessageOpen = document.querySelector("#welcome-messageopen")
+
+welcomeMessageClose.addEventListener("click", function() {
+  closeWindow(welcomeMessage);
+});
+
+welcomeMessageOpen.addEventListener("click", function() {
+  openWindow(welcomeMessage);
+});
