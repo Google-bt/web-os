@@ -6,8 +6,8 @@
     </head>
     <body>
         <div style="display: flex; justify-content: space-between; background-color: rgba(0, 0, 0, 0.3);">
-            <p style="margin-left: 20px;">globOS</p>
-            <p id="time-element" style="margin-right: 20px;">7/16/2026, 8:11:19 PM</p>
+            <p style="margin-left: 20px; font-weight: bold; color: white;">globOS</p>
+            <p id="time-element" style="margin-right: 20px; color: white;">7/16/2026, 8:11:19 PM</p>
         </div>
         <div class="welcome-message">
             <div style="display: flex;">
@@ -16,14 +16,6 @@
             </div>
             <p>globOS is a <dfn>feature-limited OS</dfn> (because I'm a single person and don't have a lot of time to spend on it) but it has plenty of cool stuff you can use straight from your browser!</p>
         </div>
-        <script>
-            function updateTime() {
-                var currentTime = new Date().toLocaleString();
-                var timeText = document.querySelector("#time-element");
-                timeText.innerHTML = currentTime;
-            }
-
-            setInterval(updateTime, 1000);
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
