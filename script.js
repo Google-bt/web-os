@@ -51,6 +51,7 @@ var topBar = document.querySelector("#top")
 
 dragElement(document.getElementById("welcome-message"));
 dragElement(document.getElementById("notes"));
+dragElement(document.getElementById("remote-print"));
 
 function closeWindow(element) {
   element.style.display = "none"
@@ -89,6 +90,19 @@ notesOpen.addEventListener("click", function() {
     openWindow(notes);
 })
 
+var remotePrint = document.querySelector("#remote-print");
+
+var remotePrintClose = document.querySelector("#remote-printclose")
+var remotePrintOpen = document.querySelector("#remote-printopen")
+
+remotePrintClose.addEventListener("click", function() {
+    closeWindow(remotePrint);
+})
+
+remotePrintOpen.addEventListener("click", function() {
+    openWindow(remotePrint);
+})
+
 var biggestIndex = 1;
 
 function handleWindowTap(element) {
@@ -106,3 +120,4 @@ function addWindowTapHandling(element) {
 
 addWindowTapHandling(welcomeMessage);
 addWindowTapHandling(notes);
+addWindowTapHandling(remotePrint);

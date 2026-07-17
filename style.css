@@ -79,3 +79,23 @@ textarea {
   height: 200px;
   border-radius: 5px;
 }
+
+.print-file {
+  border: 2px solid rgba(88, 88, 88, 0.2);
+  border-radius: 5px;
+  background-color: rgba(224, 224, 224, 0.8);
+  margin: 5px;
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.print-button {
+  border: 1px solid #2cb2ff;
+  border-radius: 5px;
+  background-color: #88d4ff;
+  width: 100%;
+  height: fit-content;
+  padding: 6px;
+  cursor: pointer;
+}
