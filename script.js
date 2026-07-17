@@ -60,12 +60,12 @@ function openWindow(element) {
 var welcomeMessage = document.querySelector("#welcome-message");
 
 var welcomeMessageClose = document.querySelector("#welcome-messageclose")
-var welcomeMessageOpen = document.querySelector("#welcome-messageopen")
+// var welcomeMessageOpen = document.querySelector("#welcome-messageopen")
 
 welcomeMessageClose.addEventListener("click", function() {
   closeWindow(welcomeMessage);
 });
 
-welcomeMessageOpen.addEventListener("click", function() {
-  openWindow(welcomeMessage);
-});
+// welcomeMessageOpen.addEventListener("click", function() {
+//   openWindow(welcomeMessage);
+// });

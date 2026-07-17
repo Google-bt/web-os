@@ -25,6 +25,8 @@ body {
 
 .windowheader {
   cursor: move;
+  display: flex;
+  justify-content: space-between;
 }
 
 #welcome-message img {
@@ -56,6 +58,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: fit-content;
+  cursor: pointer;
 }
 
 .app p {
