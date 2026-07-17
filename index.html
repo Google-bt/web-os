@@ -11,7 +11,7 @@
         </div>
 
         <div id="desktopApps" style="padding: 16px;">
-            <div class="app" id="notes-app">
+            <div class="app" id="notesopen">
                 <img src="app-icons/notes.png" alt="Notes" class="app-icon">
                 <p>Notes</p>
             </div>
@@ -29,6 +29,17 @@
                     <img src="cat.png" alt="cat" id="cat-image">
                 </div>
                 <p>globOS is a <dfn>feature-limited OS</dfn> (because I'm a single person and don't have a lot of time to spend on it) but it has plenty of cool stuff you can use straight from your browser!</p>
+            </div>
+        </div>
+
+        <div class="window" id="notes" style="display: none;">
+            <div class="windowheader" id="notesheader">
+                <div class="closebutton" id="notesclose"></div>
+                <p style="color: white;">Notes</p>
+                <p style="margin-right: 20px; color: white; font-weight: bold;">Window</p>
+            </div>
+            <div class="windowcontent">
+                <textarea placeholder="Write your notes here..."></textarea>
             </div>
         </div>
         <script src="script.js"></script>

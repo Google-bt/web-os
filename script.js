@@ -48,6 +48,7 @@ function dragElement(elmnt) {
 }
 
 dragElement(document.getElementById("welcome-message"));
+dragElement(document.getElementById("notes"));
 
 function closeWindow(element) {
   element.style.display = "none"
@@ -69,3 +70,16 @@ welcomeMessageClose.addEventListener("click", function() {
 // welcomeMessageOpen.addEventListener("click", function() {
 //   openWindow(welcomeMessage);
 // });
+
+var notes = document.querySelector("#notes");
+
+var notesClose = document.querySelector("#notesclose")
+var notesOpen = document.querySelector("#notesopen")
+
+notesClose.addEventListener("click", function() {
+    closeWindow(notes);
+})
+
+notesOpen.addEventListener("click", function() {
+    openWindow(notes);
+})

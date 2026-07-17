@@ -72,3 +72,9 @@ body {
   border-radius: 15%;
   margin: 10px;
 }
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  height: 200px;
+}
