@@ -47,6 +47,8 @@ function dragElement(elmnt) {
   }
 }
 
+var topBar = document.querySelector("#top")
+
 dragElement(document.getElementById("welcome-message"));
 dragElement(document.getElementById("notes"));
 
@@ -55,7 +57,10 @@ function closeWindow(element) {
 }
 
 function openWindow(element) {
-  element.style.display = "block"
+  element.style.display = "block";
+  biggestIndex++;
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
 }
 
 var welcomeMessage = document.querySelector("#welcome-message");
@@ -83,3 +88,21 @@ notesClose.addEventListener("click", function() {
 notesOpen.addEventListener("click", function() {
     openWindow(notes);
 })
+
+var biggestIndex = 1;
+
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+  deselectIcon(selectedIcon)
+}
+
+function addWindowTapHandling(element) {
+  element.addEventListener("mousedown", () =>
+    handleWindowTap(element)
+  )
+}
+
+addWindowTapHandling(welcomeMessage);
+addWindowTapHandling(notes);

@@ -5,12 +5,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div style="display: flex; justify-content: space-between; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(20px);">
+        <div id="top" style="display: flex; justify-content: space-between; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(20px); position: absolute; top: 0; left: 0; right: 0; pointer-events: none;">
             <p style="margin-left: 20px; font-weight: bold; color: white;">globOS</p>
             <p id="time-element" style="margin-right: 20px; color: white;">7/16/2026, 8:11:19 PM</p>
         </div>
 
-        <div id="desktopApps" style="padding: 16px;">
+        <div id="desktopApps" style="padding-left: 16px; padding-top: 64px;">
             <div class="app" id="notesopen">
                 <img src="app-icons/notes.png" alt="Notes" class="app-icon">
                 <p>Notes</p>
@@ -38,7 +38,7 @@
                 <p style="color: white;">Notes</p>
                 <p style="margin-right: 20px; color: white; font-weight: bold;">Window</p>
             </div>
-            <div class="windowcontent">
+            <div class="windowcontent" style="padding: 4px;">
                 <textarea placeholder="Write your notes here..."></textarea>
             </div>
         </div>

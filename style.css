@@ -74,7 +74,8 @@ body {
 }
 
 textarea {
-  width: 100%;
+  width: 98.5%;
   resize: vertical;
   height: 200px;
+  border-radius: 5px;
 }
