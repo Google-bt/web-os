@@ -121,5 +121,3 @@ function addWindowTapHandling(element) {
 addWindowTapHandling(welcomeMessage);
 addWindowTapHandling(notes);
 addWindowTapHandling(remotePrint);
-
-// temp
